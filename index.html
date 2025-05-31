@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SECTION 1: Top Navigation Bar -->
+
+<header>
+  <nav class="navbar">
+    <div class="logo">MyFlix</div>
+
+    <!-- Hamburger menu toggle checkbox -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#trending">Trending</a></li>
+      <li><a href="#popular">Popular</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- SECTION 2: Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-left">
+    <h1>Welcome to <span class="highlight">MyFlix</span></h1>
+    <p>Uncover trending movies, explore top-rated shows, and dive into real user reviews — all in one place!</p>
+    <div class="hero-buttons">
+      <a href="#trending" class="btn">Trending Movies</a>
+      <a href="#popular-shows" class="btn secondary">Popular Shows</a>
+      <a href="#user-reviews" class="btn secondary">User Reviews</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="https://www.svgrepo.com/show/303388/movie.svg" alt="Movie SVG" class="hero-img">
+  </div>
+</section>
+
+
+
+
+
+<!-- SECTION 3: Trending Movies -->
+<section id="trending" class="trending-section">
+  <h2>🔥 Trending Movies</h2>
+  <p class="subtitle">Catch the most thrilling picks, hand-picked for your watchlist!</p>
+
+  <div class="movie-cards">
+    <!-- Movie 1: Chaava -->
+    <div class="movie-card">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.6haZxMgoaCD4VX47UN4oywHaEK&pid=Api&P=0&h=180" alt="Chaava">
+      <div class="movie-info">
+        <h3>Chaava</h3>
+        <p>The fearless tale of Sambhaji Maharaj's ultimate sacrifice for Swarajya.</p>
+        <span class="duration">2h 5m 39s</span>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://youtu.be/Ca1IgruTD1o?si=D5facayV_mtB58Vw" target="_blank" class="watch-btn">Watch Now</a>
+        <label class="watchlist-toggle">
+          <input type="checkbox">
+          <span class="icon">+</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Movie 2: Uri -->
+    <div class="movie-card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.aO99BP4cpBAXT_7Z_WOOwwHaEU&pid=Api&P=0&h=180" alt="Uri: The Surgical Strike">
+      <div class="movie-info">
+        <h3>Uri: The Surgical Strike</h3>
+        <p>A true story of the covert military operation in response to terrorist attacks.</p>
+        <span class="duration">2h 12m 35s</span>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://youtu.be/ga1PMLM0Op4?si=gL1Kp6zX0biOv7Ko" target="_blank" class="watch-btn">Watch Now</a>
+        <label class="watchlist-toggle">
+          <input type="checkbox">
+          <span class="icon">+</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Movie 3: Airlift -->
+    <div class="movie-card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.iyXjYKGwwHehIIfW3f6JVwHaJQ&pid=Api&P=0&h=180" alt="Airlift">
+      <div class="movie-info">
+        <h3>Airlift</h3>
+        <p>A gripping rescue mission of over 170,000 Indians from war-torn Kuwait.</p>
+        <span class="duration">2h 10m</span>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://youtu.be/mwVKwP0V7Q4?si=mQNg2ecqsUwHApK4" target="_blank" class="watch-btn">Watch Now</a>
+        <label class="watchlist-toggle">
+          <input type="checkbox">
+          <span class="icon">+</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Movie 4: Rudra -->
+    <div class="movie-card">
+      <img src="https://i.ytimg.com/vi/4jJiCpgLg4g/maxresdefault.jpg" alt="Rudra">
+      <div class="movie-info">
+        <h3>Rudra</h3>
+        <p>A gritty psychological thriller following a brilliant but tormented cop.</p>
+        <span class="duration">2h 45m 30s</span>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://youtu.be/11kBh8c5Bgc?si=5ek4GwU7kIj8jHrj" target="_blank" class="watch-btn">Watch Now</a>
+        <label class="watchlist-toggle">
+          <input type="checkbox">
+          <span class="icon">+</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section 4: Popular Shows -->
+<!-- Section 4: Popular Shows -->
+<section id="popular-shows" class="section">
+  <h2>Popular Shows</h2>
+  <p class="subtitle">Unforgettable stories you'll love to rewatch!</p>
+
+  <div class="show-cards">
+
+    <!-- Ghajini -->
+    <div class="show-card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.R4WuJsfkJQitFy9XJKV1aQHaG1&pid=Api&P=0&h=180" alt="Ghajini">
+      <div class="show-info">
+        <h3>Ghajini</h3>
+        <p>Genre: Thriller, Action<br>Duration: 2 hrs 58 mins</p>
+        <p class="synopsis">A man with short-term memory loss uses tattoos to hunt his girlfriend's killer.</p>
+        <label for="modal1" class="learn-more">Learn More</label>
+      </div>
+    </div>
+
+    <!-- 13B -->
+    <div class="show-card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.YG7SwG7CaHCb1tk9t0_pUAHaEK&pid=Api&P=0&h=180" alt="13B">
+      <div class="show-info">
+        <h3>13B</h3>
+        <p>Genre: Horror, Mystery<br>Duration: 2 hrs 17 mins</p>
+        <p class="synopsis">A man’s life unravels when a TV show eerily mirrors real events.</p>
+        <label for="modal2" class="learn-more">Learn More</label>
+      </div>
+    </div>
+
+    <!-- ZNMD -->
+    <div class="show-card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.zU_x1O_v7Ty4fr9Z15sT7wHaE8&pid=Api&P=0&h=180" alt="ZNMD">
+      <div class="show-info">
+        <h3>Zindagi Na Milegi Dobara</h3>
+        <p>Genre: Drama, Adventure<br>Duration: 2 hrs 34 mins</p>
+        <p class="synopsis">Three friends rediscover life and themselves on a trip to Spain.</p>
+        <label for="modal3" class="learn-more">Learn More</label>
+      </div>
+    </div>
+
+    <!-- Darna Mana Hai -->
+    <div class="show-card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.XslK1FayBSXGmk1F9RAI8gHaEK&pid=Api&P=0&h=180" alt="Darna Mana Hai">
+      <div class="show-info">
+        <h3>Darna Mana Hai</h3>
+        <p>Genre: Horror Anthology<br>Duration: 1 hr 56 mins</p>
+        <p class="synopsis">A set of creepy stories told around a campfire—each more chilling than the last.</p>
+        <label for="modal4" class="learn-more">Learn More</label>
+      </div>
+    </div>
+
+    <!-- Darna Zaroori Hai -->
+    <div class="show-card">
+      <img src="https://i.ytimg.com/vi/4ILcOpDE1lc/maxresdefault.jpg" alt="Darna Zaroori Hai">
+      <div class="show-info">
+        <h3>Darna Zaroori Hai</h3>
+        <p>Genre: Horror Anthology<br>Duration: 1 hr 45 mins</p>
+        <p class="synopsis">A spooky sequel with new terrifying tales and twists.</p>
+        <label for="modal5" class="learn-more">Learn More</label>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODALS -->
+<input type="checkbox" id="modal1" class="modal-toggle" hidden>
+<div class="modal">
+  <label for="modal1" class="modal-overlay"></label>
+  <div class="modal-content">
+    <h3>Ghajini</h3>
+    <p>Sanjay suffers from short-term memory loss and uses a system of tattoos and photographs to track the man who murdered his love. A gripping psychological action-thriller.</p>
+    <a href="https://youtu.be/fhbpXuSNwR4" target="_blank" class="watch-now">Watch Now</a>
+    <label for="modal1" class="close-modal">Close</label>
+  </div>
+</div>
+
+<input type="checkbox" id="modal2" class="modal-toggle" hidden>
+<div class="modal">
+  <label for="modal2" class="modal-overlay"></label>
+  <div class="modal-content">
+    <h3>13B</h3>
+    <p>A supernatural thriller where a man realizes a TV soap opera mirrors—and controls—his life. A haunting blend of suspense and paranormal mystery.</p>
+    <a href="https://youtu.be/fboOF3l9bC8" target="_blank" class="watch-now">Watch Now</a>
+    <label for="modal2" class="close-modal">Close</label>
+  </div>
+</div>
+
+<input type="checkbox" id="modal3" class="modal-toggle" hidden>
+<div class="modal">
+  <label for="modal3" class="modal-overlay"></label>
+  <div class="modal-content">
+    <h3>Zindagi Na Milegi Dobara</h3>
+    <p>Three friends take a road trip across Spain, facing their fears, mending friendships, and embracing life to the fullest. A celebration of freedom and brotherhood.</p>
+    <a href="https://youtu.be/5VMLe9c-mpg" target="_blank" class="watch-now">Watch Now</a>
+    <label for="modal3" class="close-modal">Close</label>
+  </div>
+</div>
+
+<input type="checkbox" id="modal4" class="modal-toggle" hidden>
+<div class="modal">
+  <label for="modal4" class="modal-overlay"></label>
+  <div class="modal-content">
+    <h3>Darna Mana Hai</h3>
+    <p>Six friends take shelter in a forest and share eerie horror stories that slowly become real. An anthology with spine-chilling tales and twists.</p>
+    <a href="https://youtu.be/CK5Nq1Pb0hM" target="_blank" class="watch-now">Watch Now</a>
+    <label for="modal4" class="close-modal">Close</label>
+  </div>
+</div>
+
+<input type="checkbox" id="modal5" class="modal-toggle" hidden>
+<div class="modal">
+  <label for="modal5" class="modal-overlay"></label>
+  <div class="modal-content">
+    <h3>Darna Zaroori Hai</h3>
+    <p>From ghostly teachers to haunted houses, each short story builds a chilling atmosphere. A horror collection that will keep you on edge.</p>
+    <a href="https://youtu.be/4ILcOpDE1lc" target="_blank" class="watch-now">Watch Now</a>
+    <label for="modal5" class="close-modal">Close</label>
+  </div>
+</div>
+
+
+
+<!-- Section 5: User Reviews -->
+<section id="user-reviews" class="section">
+  <h2>User Reviews</h2>
+  <p class="subtitle">See what others are saying and share your thoughts!</p>
+
+  <div class="reviews-container">
+
+    <!-- Part 1: Review Cards -->
+    <div class="review-cards">
+
+      <!-- Review Card 1 -->
+      <div class="review-card">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGVOm4Oz5hzmA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669704235125?e=1753920000&v=beta&t=nIdcra9cuYSS6oBzKjX2d9EqTgn-ifqRmOACe5wxkNU" alt="User 1">
+        <div class="review-info">
+          <h3>Rahul Kumar</h3>
+          <p>“Amazing collection of movies and shows! UI is smooth and easy to navigate. Loved it!🔥🔥”</p>
+        </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="review-card">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHmQdbT05367Q/profile-displayphoto-shrink_400_400/B4DZRhr9AsHEAg-/0/1736805700562?e=1753920000&v=beta&t=ETmk0Kr74teReAph0b-K79xnVAh_Zi1CcHDp2vSSjz0" alt="User 2">
+        <div class="review-info">
+          <h3>Arnab Karmakar</h3>
+          <p>“A great platform for streaming! The Trending Movies section is my favorite.”</p>
+        </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="review-card">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFF5QFMyfc_Fw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714427013338?e=1753920000&v=beta&t=unIwdz9DRNMbPGa4t1DdrA9lLFMVlzeQkEGgc3Vr47g" alt="User 3">
+        <div class="review-info">
+          <h3>Ankita Sarkar</h3>
+          <p>“I submitted my review in seconds! Clean design, everything’s well organized.”</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Review Card 4 -->
+      <div class="review-card">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFwsBDbpKqCIQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1706946837034?e=1753920000&v=beta&t=Eb2v9th99grPfjLyFksZb4QIEwJCe-VKJiJJgYDMFXM" alt="User 4">
+        <div class="review-info">
+          <h3>Shreya Santosh</h3>
+          <p>“The horror section is incredible! Gave me goosebumps. Great recommendation engine too. Loved it❤️”</p>
+        </div>
+      </div>
+
+      <!-- Review Card 5 -->
+      <div class="review-card">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHaqXSR06TYmQ/profile-displayphoto-shrink_400_400/B4DZbbxPKxHsAo-/0/1747443840947?e=1753920000&v=beta&t=KWkK_UrrLm1i1X2m4cvCHHWCQMQx-bWM7sMlx-jvEsM" alt="User 5">
+        <div class="review-info">
+          <h3>Ishan Dutta</h3>
+          <p>“Best way to chill after work. Love the ‘Zindagi Na Milegi Dobara’ listing — pure gold!”</p>
+        </div>
+      </div>
+
+      <!-- Review Card 6 -->
+      <div class="review-card">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQG_ZIhgWPTfLw/profile-displayphoto-shrink_800_800/B56ZcmqlKJHUAc-/0/1748700387210?e=1753920000&v=beta&t=iKa_f8Kx2TvWfCnmF9kDsxCPDkRVrHOOCrHuxDd-SHE" alt="User 6">
+        <div class="review-info">
+          <h3>Aismita Paul</h3>
+          <p>“ Seriously, can’t get enough! Just keep the fresh content coming. Loving the energy!”</p>
+        </div>
+      </div>
+        <!-- Review Card 7 -->
+
+       <div class="review-card">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHGOybOxTxpcw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723356191727?e=1753920000&v=beta&t=4tRrCyu1_8pVXDOZi2gFSvR_i57qgsD5Gi_F3xho-Fo" alt="User 7">
+        <div class="review-info">
+          <h3>Rupsha Das</h3>
+          <p>“I shared this platform with my friends. Everyone’s hooked. Keep updating with new content!”</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Part 2: Review Submission Form -->
+    <div class="review-form">
+      <form class="review-form">
+    <h3>Submit Your Review</h3>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Review" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+    </div>
+
+  </div>
+</section>
+
+     
+
+
+<!-- Section 6: Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>YourMovieZone</h3>
+      <p>&copy; 2025 YourMovieZone. All rights reserved.</p>
+    </div>
+
+    <div class="footer-middle">
+      <a href="https://example.com/terms" target="_blank">Terms & Conditions</a>
+      <a href="https://example.com/privacy" target="_blank">Privacy Policy</a>
+    </div>
+
+    <div class="footer-right">
+      <a href="#" class="social-icon">📘</a>
+      <a href="#" class="social-icon">🐦</a>
+      <a href="https://www.instagram.com/swaggy_riddrii?igsh=c2g5MnlieW0weWdt" class="social-icon" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/riddhiman-rakshit-12923228b" class="social-icon" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Back to Top Button -->
+  <a href="#top" class="back-to-top">⬆ Back to Top</a>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
